@@ -110,8 +110,8 @@ nav:
   #     - API Reference: developer-reference/api-reference.md
   #     - SDKs: developer-reference/sdks.md
   #     - Webhooks: developer-reference/webhooks.md 
-# extra:
-#   generator: false
+extra:
+  generator: false
   # social:
   #   - icon: fontawesome/brands/x-twitter 
   #     link: https://twitter.com/holostaffai
@@ -121,4 +121,4 @@ nav:
   #     link: https://www.facebook.com/HolostaffAI
   #   - icon: fontawesome/brands/slack
   #     link: https://join.slack.com/t/holostaff-ai/shared_invite/zt-1q4x5j3k2-8b7f9c6d9f8e7a
-# copyright: Copyright &copy; 2025 Holostaff AI Team. All rights reserved.
+copyright: Copyright &copy; 2025 Holostaff AI Team. All rights reserved.

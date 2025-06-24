@@ -1,0 +1,110 @@
+site_name: Holostaff AI Documentation
+site_url: https://docs.holostaff.ai  # Placeholder: Update with your deployment URL
+site_description: Comprehensive documentation for Holostaff AI, your virtual human workforce platform.
+site_author: Holostaff AI Team
+
+# Repository for "Edit this page" link
+# repo_url: https://github.com/xxl007/holostaff-ai # Placeholder: Update with your actual repo URL
+# repo_name: GitHub
+
+# Theme configuration
+theme:
+  name: material
+  custom_dir: docs/theme_overrides # Optional: for future custom CSS/JS
+  palette:
+    # Light mode palette (default)
+    - scheme: default
+      primary: blue        # Closest Material Design color to #284281
+      accent: pink
+      toggle:
+        icon: material/brightness-4 # Icon for light mode
+        name: Switch to dark mode
+    # Dark mode palette
+    - scheme: slate
+      primary: blue        # Closest Material Design color to #284281
+      accent: pink
+      toggle:
+        icon: material/brightness-2 # Icon for dark mode
+        name: Switch to light mode
+  font:
+    text: Inter            # App uses Inter font
+    code: Roboto Mono
+  features:
+    - navigation.tabs           # Top-level navigation as tabs
+    - navigation.tabs.sticky    # Tabs stick to the top when scrolling
+    - navigation.sections       # Sections/sub-sections in the side nav
+    - navigation.expand         # Automatically expands sub-sections
+    - toc.integrate             # Integrate table of contents with side navigation
+    - search.suggest            # Search suggestions as you type
+    - search.highlight          # Highlight search results on the page
+    - content.code.copy         # Copy button for code blocks
+    - content.code.annotate     # Code block annotations
+  favicon: assets/images/favicon.ico
+  logo: assets/logo.png
+
+
+# Plugins (if required, for now just search)
+plugins:
+  - search
+
+# Markdown extensions
+markdown_extensions:
+  - admonition                      # For note, tip, warning blocks
+  - pymdownx.highlight:             # Better code highlighting
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite           # Inline highlighting
+  - pymdownx.snippets               # For including snippets from other files
+  - pymdownx.superfences            # Nested code blocks
+  - pymdownx.details                # Expandable sections
+  - attr_list                       # For adding attributes to markdown elements
+  - md_in_html                      # Allows Markdown inside HTML blocks
+  - footnotes                       # Footnotes
+
+# Point to custom CSS for color definitions
+extra_css:
+  - stylesheets/extra.css
+
+# Navigation structure (based on our agreed structure)
+nav:
+  - Home: index.md
+  - Getting Started:
+      - Creating Your Account: getting-started/creating-account.md
+      - The Onboarding Wizard: getting-started/onboarding-wizard.md
+      - The Dashboard: getting-started/dashboard.md
+  - Workspaces & Collaboration:
+      - Introduction to Workspaces: workspaces/index.md
+      - Team Management: workspaces/team-management.md
+  - Your AI Staff:
+      - What is an AI Staff Member?: ai-staff/index.md
+      - Creating a New AI Staff: ai-staff/create.md
+      - Configuring Your AI Staff:
+          - Style & Appearance: ai-staff/configure.md
+          - Instructions & Knowledge: ai-staff/instructions.md
+          - Widget Customization: ai-staff/widget.md
+      - Deploying Your AI Staff: ai-staff/deployment.md
+      - Managing Existing AI Staff: ai-staff/manage.md
+  - Knowledge Sources:
+      - Introduction to Knowledge: knowledge/index.md
+      - Website Intelligence Builder: knowledge/create.md
+      - Managing Knowledge Sources: knowledge/manage.md
+  - Analytics & Performance:
+      - Overview: analytics/index.md
+      # - Conversation Trends: analytics/conversation-trends.md # Consolidate into index for now
+      # - Staff Performance: analytics/staff-performance.md # Consolidate into index for now
+      # - Customer Insights: analytics/customer-insights.md # Consolidate into index for now
+  - Billing & Account Management:
+      - Billing & Subscriptions: billing/index.md
+      - Your Account Settings: account/index.md
+  - Support & Help:
+      - Knowledge Base & FAQs: support/index.md
+      - Contacting Support: support/contact-support.md
+      - Submitting a Support Ticket: support/submit-ticket.md
+      - Data Deletion Policy: support/data-deletion.md
+      - Privacy Policy: support/privacy-policy.md
+      - Terms of Service: support/terms-of-service.md
+  # - Developer Reference:
+  #     - API Reference: developer-reference/api-reference.md
+  #     - SDKs: developer-reference/sdks.md
+  #     - Webhooks: developer-reference/webhooks.md

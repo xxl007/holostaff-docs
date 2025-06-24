@@ -33,6 +33,7 @@ theme:
   features:
     - navigation.tabs           # Top-level navigation as tabs
     - navigation.tabs.sticky    # Tabs stick to the top when scrolling
+    - navigation.footer         # Footer navigation links
     - navigation.sections       # Sections/sub-sections in the side nav
     - navigation.expand         # Automatically expands sub-sections
     - toc.integrate             # Integrate table of contents with side navigation
@@ -111,12 +112,13 @@ nav:
   #     - Webhooks: developer-reference/webhooks.md 
 extra:
   generator: false
-  social:
-    - icon: fontawesome/brands/x-twitter 
-      link: https://twitter.com/holostaffai
-    - icon: fontawesome/brands/linkedin 
-      link: https://www.linkedin.com/company/holostaff-ai
-    - icon: fontawesome/brands/facebook
-      link: https://www.facebook.com/HolostaffAI
-    - icon: fontawesome/brands/slack
-      link: https://join.slack.com/t/holostaff-ai/shared_invite/zt-1q4x5j3k2-8b7f9c6d9f8e7a
+  # social:
+  #   - icon: fontawesome/brands/x-twitter 
+  #     link: https://twitter.com/holostaffai
+  #   - icon: fontawesome/brands/linkedin 
+  #     link: https://www.linkedin.com/company/holostaff-ai
+  #   - icon: fontawesome/brands/facebook
+  #     link: https://www.facebook.com/HolostaffAI
+  #   - icon: fontawesome/brands/slack
+  #     link: https://join.slack.com/t/holostaff-ai/shared_invite/zt-1q4x5j3k2-8b7f9c6d9f8e7a
+copyright: Copyright &copy; 2025 Holostaff AI Team. All rights reserved.

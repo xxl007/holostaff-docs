@@ -10,7 +10,7 @@ site_author: Holostaff AI Team
 # Theme configuration
 theme:
   name: material
-  custom_dir: docs/theme_overrides # Optional: for future custom CSS/JS
+  # custom_dir: docs/theme_overrides # Optional: for future custom CSS/JS
   palette:
     # Light mode palette (default)
     - scheme: default

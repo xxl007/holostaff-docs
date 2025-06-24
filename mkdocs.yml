@@ -2,6 +2,7 @@ site_name: Holostaff AI Documentation
 site_url: https://docs.holostaff.ai  # Placeholder: Update with your deployment URL
 site_description: Comprehensive documentation for Holostaff AI, your virtual human workforce platform.
 site_author: Holostaff AI Team
+use_directory_urls: false
 
 # Repository for "Edit this page" link
 # repo_url: https://github.com/xxl007/holostaff-ai # Placeholder: Update with your actual repo URL
@@ -44,8 +45,8 @@ theme:
 
 
 # Plugins (if required, for now just search)
-plugins:
-  - search
+plugins: []
+  # - search
 
 # Markdown extensions
 markdown_extensions:
@@ -108,3 +109,14 @@ nav:
   #     - API Reference: developer-reference/api-reference.md
   #     - SDKs: developer-reference/sdks.md
   #     - Webhooks: developer-reference/webhooks.md 
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/x-twitter 
+      link: https://twitter.com/holostaffai
+    - icon: fontawesome/brands/linkedin 
+      link: https://www.linkedin.com/company/holostaff-ai
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/HolostaffAI
+    - icon: fontawesome/brands/slack
+      link: https://join.slack.com/t/holostaff-ai/shared_invite/zt-1q4x5j3k2-8b7f9c6d9f8e7a

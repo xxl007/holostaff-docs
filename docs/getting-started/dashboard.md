@@ -1,63 +1,30 @@
-# The Holostaff AI Dashboard
+# The Dashboard
 
-Your Holostaff AI Dashboard is the central hub for monitoring your AI operations, tracking key metrics, and accessing essential tools. After completing the Onboarding Wizard, you'll be greeted by this comprehensive overview designed to keep you informed about your AI staff's performance and recent activities.
+Home is a working view, not a vanity view. It tells you what state your product is in and what needs you next.
 
-The Dashboard provides a snapshot of your AI workforce's impact, helping you make informed decisions and quickly navigate to relevant sections of the platform.
+![The Home dashboard](../assets/images/app/home.png)
 
-## Dashboard Sections
+## What you see
 
-The Dashboard is organized into several key areas, providing a holistic view of your Holostaff AI account:
+**The map banner.** Once a scan lands, Home confirms your product is on the map and links straight to the [journey map canvas](../journey-maps/canvas.md).
 
-### 1. Welcome Banner
+**Staffing summary.** Products, copilots, and how many journey stages are staffed (for example `3/7 staffed`).
 
-At the top of your Dashboard, you'll find a personalized welcome message. This banner provides immediate context and sets the tone for your daily operations.
+**Needs you.** The queue of actions only you can take: a copilot assigned but not yet published, a paused copilot to resume, a re-scan with flagged changes to review. Each row carries its action button.
 
-### 2. Summary Statistics
+**Your products.** Every scanned product with its staffed-stages bar. One workspace can hold several products; each gets its own journey map.
 
-This section provides an immediate overview of crucial performance indicators for your AI staff:
+**Team activity.** Who assigned, published, or changed what, and when.
 
-*   **Total AI Staff:** The total number of AI staff members you have created within your account.
-*   **Active AI Staff:** The count of your AI staff members that are currently deployed and actively engaging with users.
-*   **Total Interactions:** The cumulative number of conversations or engagements your AI staff has handled across all deployments.
-*   **Average Satisfaction:** The overall satisfaction rating from users interacting with your AI staff, typically measured on a scale (e.g., out of 5 stars).
+## The navigation
 
-Each statistic may include a percentage change indicator, showing performance trends compared to previous periods (e.g., last month or last week).
+The sidebar mirrors how you work:
 
-### 3. Charts and Performance Overviews
-
-The Dashboard features visual representations of your AI staff's performance trends:
-
-*   **Monthly Interactions Chart:** A line or area chart illustrating the trend of user interactions over a monthly period. This helps you visualize growth or identify periods of high/low engagement.
-*   **Satisfaction Ratings Chart:** A chart depicting the average satisfaction score over time, allowing you to track the continuous improvement of your AI staff's performance.
-
-### 4. Recent Activities
-
-This dynamic section keeps you updated on important events related to your AI staff members:
-
-*   **Real-time Updates:** See a chronological list of actions and events, such as:
-    *   New AI staff creation.
-    *   AI staff deployment or status changes (e.g., "deployed to website," "now active").
-    *   Updates to AI staff configurations (e.g., "had instructions updated").
-    *   New conversations initiated by your AI staff.
-*   **Timestamp:** Each activity is noted with a time indicator (e.g., "just now," "2 hours ago," "1 day ago") for quick reference.
-
-This section provides valuable insights into the recent operational status and output of your AI workforce.
-
-### 5. Top Performers
-
-Identify your most effective AI staff members at a glance:
-
-*   This list highlights AI staff members who have achieved high interaction counts or satisfaction ratings.
-*   Each entry typically includes the staff member's name, role, number of interactions, and their individual satisfaction rating.
-
-### 6. Quick Links
-
-The Quick Links section provides convenient shortcuts to frequently accessed areas of the Holostaff AI platform, enabling you to rapidly navigate to:
-
-*   **Knowledge:** Manage and create new knowledge sources for your AI staff.
-*   **My Staff:** View, configure, and manage all your AI staff members.
-*   **Analytics:** Dive deeper into detailed performance metrics and conversation data.
-*   **Settings:** Access your account, billing, and workspace configuration options.
-*   **Help & Support:** Find answers to common questions or contact our support team.
-
-The Holostaff AI Dashboard is your operational control center, updated regularly to provide you with the most relevant information for managing your AI team effectively.
+| Group | Section | What it is |
+|---|---|---|
+| Build | [Journey Maps](../journey-maps/index.md) | Your scanned products and their canvases |
+| Build | [Copilots](../copilots/index.md) | Your AI staff roster |
+| Measure | [Evaluations](../evaluations/index.md) | Simulated-user rehearsals and verdicts |
+| Measure | [Impact](../impact/index.md) | What your copilots changed, attributed |
+| Manage | Settings | Account, billing, workspace, [CLI keys](../cli/index.md#ci-keys) |
+| Manage | Help & Support | Docs and support |

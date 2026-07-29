@@ -68,48 +68,38 @@ markdown_extensions:
 extra_css:
   - stylesheets/extra.css
 
-# Navigation structure (based on our agreed structure)
+# Navigation structure
 nav:
   - Home: index.md
   - Getting Started:
-      - Creating Your Account: getting-started/creating-account.md
-      - The Onboarding Wizard: getting-started/onboarding-wizard.md
+      - Quickstart: getting-started/quickstart.md
+      - Your Account: getting-started/creating-account.md
       - The Dashboard: getting-started/dashboard.md
-  - Workspaces & Collaboration:
-      - Introduction to Workspaces: workspaces/index.md
+  - Journey Maps:
+      - What is a Journey Map: journey-maps/index.md
+      - The Canvas: journey-maps/canvas.md
+  - Copilots:
+      - Your AI Staff: copilots/index.md
+      - Creating a Copilot: copilots/create.md
+  - Evaluations:
+      - Rehearsing with Simulated Users: evaluations/index.md
+  - Deploying:
+      - The Deploy Flow: deploy/index.md
+      - The SDK: deploy/sdk.md
+  - Impact:
+      - Measuring What Changed: impact/index.md
+  - CLI Reference:
+      - Commands & CI: cli/index.md
+  - Workspaces:
+      - Workspaces & Collaboration: workspaces/index.md
       - Team Management: workspaces/team-management.md
-  - Your AI Staff:
-      - What is an AI Staff Member?: ai-staff/index.md
-      - Creating a New AI Staff: ai-staff/create.md
-      - Configuring Your AI Staff:
-          - Style & Appearance: ai-staff/configure.md
-          - Instructions & Knowledge: ai-staff/instructions.md
-          - Widget Customization: ai-staff/widget.md
-      - Deploying Your AI Staff: ai-staff/deployment.md
-      - Managing Existing AI Staff: ai-staff/manage.md
-  - Knowledge Sources:
-      - Introduction to Knowledge: knowledge/index.md
-      - Website Intelligence Builder: knowledge/create.md
-      - Managing Knowledge Sources: knowledge/manage.md
-  - Analytics & Performance:
-      - Overview: analytics/index.md
-      # - Conversation Trends: analytics/conversation-trends.md # Consolidate into index for now
-      # - Staff Performance: analytics/staff-performance.md # Consolidate into index for now
-      # - Customer Insights: analytics/customer-insights.md # Consolidate into index for now
-  - Billing & Account Management:
+  - Billing:
       - Billing & Subscriptions: billing/index.md
-      - Your Account Settings: account/index.md
-  - Support & Help:
+  - Support:
       - Knowledge Base & FAQs: support/index.md
-      - Contacting Support: support/contact-support.md
-      - Submitting a Support Ticket: support/submit-ticket.md
       - Data Deletion Policy: support/data-deletion.md
       - Privacy Policy: support/privacy-policy.md
       - Terms of Service: support/terms-of-service.md
-  # - Developer Reference:
-  #     - API Reference: developer-reference/api-reference.md
-  #     - SDKs: developer-reference/sdks.md
-  #     - Webhooks: developer-reference/webhooks.md 
 extra:
   generator: false
   # social:

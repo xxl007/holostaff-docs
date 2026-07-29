@@ -39,14 +39,14 @@ You are.
 
 SaaS and software teams that lose users between sign-up and first value. If your analytics show the drop-off but nobody is there when it happens, Holostaff staffs that moment.
 
+![A journey map on the canvas](assets/images/app/canvas-workflow.png)
+
 ## Quick links
 
-* [Getting started](getting-started/creating-account.md)
-* [The Dashboard](getting-started/dashboard.md)
-* CLI package: [`@holostaff/cli` on npm](https://www.npmjs.com/package/@holostaff/cli)
-* Product: [holostaff.ai](https://www.holostaff.ai/)
-
----
-
-!!! note "Docs refresh in progress"
-    Holostaff has evolved from a website chat widget platform into in-product customer success. Pages deeper in these docs may still describe older surfaces while we bring everything up to date. The description above reflects the current product.
+* [Quickstart](getting-started/quickstart.md) — one command to put your product on the map
+* [Journey Maps](journey-maps/index.md) — the canvas your scan produces
+* [Copilots](copilots/index.md) — hire, assign, publish
+* [Evaluations](evaluations/index.md) — simulated users rehearse your staff
+* [Deploying](deploy/index.md) — the PR path and [the SDK](deploy/sdk.md)
+* [Impact](impact/index.md) — what your copilots changed
+* [CLI reference](cli/index.md) — every command, CI mode, and what leaves your machine

@@ -1,43 +1,52 @@
-# Welcome to Holostaff AI Documentation
+# Holostaff AI Documentation
 
-Welcome to the official documentation for Holostaff AI! This guide is designed to help you understand, set up, and effectively utilize your AI-powered virtual workforce.
+Holostaff AI puts in-product customer success on autopilot. AI staff live inside your product. They know it from your code, spot each user the moment they struggle, and step in right there in the session. Shipped to your app with one pull request.
 
 ## What is Holostaff AI?
 
-Holostaff AI is a cutting-edge platform that allows businesses to create and deploy intelligent, AI-powered virtual humans. These virtual human staff members are designed to understand your customers, provide support, drive sales, and engage with your audience 24/7, directly from your website or integrated channels.
+Holostaff gives every user of your product a personal success manager.
 
-Our platform leverages advanced AI models to read and comprehend your existing business knowledge, such as website content, product descriptions, FAQs, and internal documents. This knowledge is then used to empower your AI staff, enabling them to provide accurate, personalized, and efficient interactions with your users.
+These success managers are AI staff members that work inside your product itself. Not in a separate chat window. Not in an email sequence. They learn your product by reading its codebase, watch each user's session for signs of struggle, and help at the exact moment it matters. They can talk, point, guide, or take the stuck step together with the user on screen.
 
-With Holostaff AI, you can transform your online presence into a dynamic, interactive, and highly efficient customer engagement machine, without needing extensive technical expertise or development resources.
+Holostaff is not a chatbot. A chatbot waits to be asked. It is not a product tour. Tours are pre-recorded and the same for everyone. It is not a customer success back office. Those tools produce health scores and emails after the fact. Holostaff acts inside the product, during the session, one user at a time.
 
-## Key Benefits and Use Cases
+## How it works
 
-Holostaff AI offers a range of benefits across various business functions:
+1. **Scan.** Run `npx @holostaff/cli` in your repository. An agent reads the code and learns your product the way an engineer would. No instrumentation, no data migration.
+2. **Map.** The scan draws every user journey on a canvas: routes, workflows, screens, and the places users stall or drop off. This is your Journey Map.
+3. **Hire.** Turn the map's proposals into staff. Each copilot gets a face, a voice, and a job tied to a journey stage: onboarding, activation, retention, expansion.
+4. **Rehearse.** Before any real user meets them, your staff face simulated users. AI visitors drive a real browser through your actual scenarios, and every reply is graded on the Evaluations board.
+5. **Ship.** `holostaff deploy` opens a pull request. Your engineers review it like any other change. One line plus the SDK puts staff on duty.
+6. **Measure.** The Impact dashboard attributes activation, retention, and expansion lift to specific interventions, with a live feed as they happen.
 
-*   **24/7 Availability:** Your virtual human staff works around the clock, ensuring customers always receive immediate assistance, regardless of time zones.
-*   **Enhanced Customer Experience:** Provide instant, detailed, and personalized responses, significantly improving customer satisfaction.
-*   **Increased Conversions:** Guide visitors through sales funnels, answer product questions instantly, and encourage purchasing decisions by providing timely and relevant information.
-*   **Reduced Operational Costs:** Automate repetitive customer inquiries and support tasks, freeing up your human team to focus on more complex issues.
-*   **Scalability:** Easily scale your customer engagement efforts without proportionate increases in staffing costs.
-*   **Personalization at Scale:** Deliver tailored interactions to each visitor, making every online interaction feel uniquely human and engaging.
-*   **Automated Knowledge Transfer:** Rapidly create intelligent AI staff by simply pointing them to your website or other data sources.
+## The product surfaces
 
-Our AI staff can serve in various roles, including:
+* **Journey Maps.** The canvas your scan produces. Every stage a user passes through, with coverage gaps flagged.
+* **Copilots.** Your AI staff roster. Create, assign, and manage the success managers on duty.
+* **Evaluations.** The rehearsal room. Simulated users pressure-test every copilot before launch and after every change.
+* **Impact.** Proof of lift. Funnel views, intervention outcomes, and live activity.
 
-*   **Sales Assistants:** Engage prospective customers, answer product/service questions, provide recommendations, and guide through the sales process.
-*   **Customer Support Agents:** Handle common inquiries, provide solutions to issues, and offer instant help with product usage or policies.
-*   **Technical Guides:** Assist users with technical queries, troubleshooting steps, and detailed information about your products' functionalities.
-*   **Information Specialists:** Act as knowledgeable resources for general inquiries, company history, or specific industry insights.
-*   **Onboarding / Process Helpers:** Guide new users through setup processes, account creation, or form completions.
+## Who is in control?
 
-## Who is Holostaff AI For?
+You are.
 
-Holostaff AI is designed for any business looking to enhance its online customer engagement, automate support, and boost conversions. This includes:
+* Every staff member is approved by you before going live.
+* Staff rehearse against simulated users first, and you see the grades.
+* Deployment goes through your normal pull request review.
+* Every intervention is logged. Everything is revocable.
 
-*   **E-commerce Businesses:** To assist shoppers, reduce cart abandonment, and improve post-purchase support.
-*   **SaaS Companies:** To handle user inquiries, provide product guidance, and streamline onboarding processes.
-*   **Agencies & Consultancies:** To offer 24/7 support to clients, automate lead qualification, and provide instant information about services.
-*   **Content Creators & Publishers:** To engage readers, answer questions about content, or guide them through subscription processes.
-*   **Any business with a web presence:** That wants to provide instant information and engaging interactions to their website visitors.
+## Who is Holostaff for?
+
+SaaS and software teams that lose users between sign-up and first value. If your analytics show the drop-off but nobody is there when it happens, Holostaff staffs that moment.
+
+## Quick links
+
+* [Getting started](getting-started/creating-account.md)
+* [The Dashboard](getting-started/dashboard.md)
+* CLI package: [`@holostaff/cli` on npm](https://www.npmjs.com/package/@holostaff/cli)
+* Product: [holostaff.ai](https://www.holostaff.ai/)
 
 ---
+
+!!! note "Docs refresh in progress"
+    Holostaff has evolved from a website chat widget platform into in-product customer success. Pages deeper in these docs may still describe older surfaces while we bring everything up to date. The description above reflects the current product.

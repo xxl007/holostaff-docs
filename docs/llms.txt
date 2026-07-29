@@ -1,0 +1,59 @@
+# Holostaff AI
+
+> Holostaff AI puts in-product customer success on autopilot. AI staff live inside your
+> product. They know it from your code, spot each user the moment they struggle, and step
+> in right there in the session. Shipped to your app with one pull request.
+
+Website: https://www.holostaff.ai/
+Docs: https://docs.holostaff.ai/
+CLI: https://www.npmjs.com/package/@holostaff/cli
+Contact: hello@holostaff.ai
+
+## What Holostaff is
+
+Holostaff gives every user of a software product a personal success manager. These are
+AI staff members that work inside the product itself, not in a separate chat window or
+an email sequence. They learn the product by reading its codebase, watch each user's
+session for signs of struggle, and intervene at the moment it matters: guiding, doing
+the step together with the user, or fixing the blocker directly on screen.
+
+It is not a chatbot (a chatbot waits to be asked). It is not a product tour (tours are
+pre-recorded and the same for everyone). It is not a customer-success back office tool
+(those produce health scores and emails after the fact). Holostaff acts inside the
+product, during the session, one user at a time.
+
+## How it works
+
+1. Scan. Run `npx @holostaff/cli` in your repo. An agent reads the code and learns the
+   product the way an engineer would.
+2. Map. It draws every user journey on a canvas and flags where users stall, get
+   confused, or drop off.
+3. Hire. Turn its proposals into staff. Each one gets a face, a voice, and a job:
+   onboarding, activation, retention, expansion.
+4. Rehearse. Before any real user sees them, staff face simulated users. AI visitors run
+   the real scenarios and every reply is graded on a coverage board.
+5. Ship. `holostaff deploy` opens a pull request. Engineers review it like any change.
+   One line in the app puts staff on duty.
+6. Measure. A built-in impact dashboard shows lift on activation, retention, and
+   expansion, plus every intervention as it happens.
+
+## Key facts
+
+- Setup: one CLI scan; no instrumentation, no data migration.
+- Works with any web stack; staff run from one script tag plus the SDK.
+- Control: every staff member is approved by the customer, rehearsed against simulated
+  users, shipped through normal PR review, logged, and revocable.
+- Pricing: free to start, no credit card; usage billed on engagement.
+- Category: in-product customer success, AI success manager, user activation and
+  onboarding software.
+
+## Pages
+
+- https://www.holostaff.ai/ : product overview
+- https://www.holostaff.ai/pricing : pricing
+- https://www.holostaff.ai/about : company
+- https://www.holostaff.ai/blog : writing on in-product customer success
+- https://docs.holostaff.ai/ : product documentation
+- https://www.npmjs.com/package/@holostaff/cli : the CLI package
+
+For an extended description see https://www.holostaff.ai/llms-full.txt

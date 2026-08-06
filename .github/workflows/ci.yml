@@ -25,5 +25,7 @@ jobs:
           path: .cache 
           restore-keys: |
             mkdocs-material-
-      - run: pip install mkdocs-material 
+      # mkdocs-redirects pinned to 1.2.2: the 1.2.3 release adds an unwanted
+      # "properdocs" dependency that injects an ad banner into every build.
+      - run: pip install mkdocs-material mkdocs-redirects==1.2.2
       - run: mkdocs gh-deploy --force

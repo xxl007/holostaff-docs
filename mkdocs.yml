@@ -4,9 +4,9 @@ site_description: Documentation for Holostaff AI. In-product customer success on
 site_author: Holostaff AI Team
 use_directory_urls: false
 
-# Repository for "Edit this page" link
-# repo_url: https://github.com/xxl007/holostaff-ai # Placeholder: Update with your actual repo URL
-# repo_name: GitHub
+# Repository link (public CLI repo)
+repo_url: https://github.com/Holostaff-AI/holostaff-cli
+repo_name: GitHub
 
 # Theme configuration
 theme:
@@ -45,9 +45,14 @@ theme:
   logo: assets/logo.png
 
 
-# Plugins (if required, for now just search)
-plugins: []
-  # - search
+# Plugins
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        ai-staff/index.md: copilots/index.md
+        analytics/index.md: impact/index.md
+        knowledge/index.md: journey-maps/index.md
 
 # Markdown extensions
 markdown_extensions:
@@ -81,6 +86,11 @@ nav:
   - Copilots:
       - Your AI Staff: copilots/index.md
       - Creating a Copilot: copilots/create.md
+  - How It Works:
+      - Guarded Actions: how-it-works/guarded-actions.md
+      - Rehearsal Evaluations: how-it-works/rehearsal-evaluations.md
+      - Deploying via Pull Request: how-it-works/deploying-via-pull-request.md
+      - What Leaves Your Machine: how-it-works/what-leaves-your-machine.md
   - Evaluations:
       - Rehearsing with Simulated Users: evaluations/index.md
   - Deploying:

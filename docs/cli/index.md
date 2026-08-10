@@ -26,7 +26,7 @@ Requires Node 20+. Running it bare opens the interactive shell; anything you typ
 |---|---|
 | `holostaff` | Open the interactive shell |
 | `holostaff scan [--quiet --json --out PATH]` | Headless scan and upload (CI-friendly) |
-| `holostaff scan --from PATH\|URL` | Import a [preset journey map](presets.md) instead of scanning |
+| `holostaff import NAME` | Import a [preset journey map](presets.md) instead of scanning (`import` alone lists them) |
 | `holostaff deploy [--dry-run] [--force]` | Open the deploy PR ([details](../deploy/index.md)) |
 | `holostaff embed` | Non-interactive embed |
 | `holostaff login` / `logout` / `whoami` / `workspace` | Auth and session |

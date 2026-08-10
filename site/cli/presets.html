@@ -1759,14 +1759,16 @@
 <p>A preset is a published journey map for an open source product. Importing one
 gives you that product's map in your own workspace in about a second. No scan
 runs, no model spend, and nothing reads your code.</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npx<span class="w"> </span>@holostaff/cli<span class="w"> </span>scan<span class="w"> </span>--from<span class="w"> </span>https://raw.githubusercontent.com/Holostaff-AI/holostaff-cli/master/presets/opnform.json
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>npx<span class="w"> </span>@holostaff/cli<span class="w"> </span>import<span class="w"> </span>opnform
 </span></code></pre></div>
 <p>Sign-in happens in the same command if you are not already signed in. The map
 lands as a new source in your workspace: your copy, yours to edit on the
 canvas.</p>
-<p><code>--from</code> accepts an <code>https</code> URL or a local file path. The file is a plain scan
-artifact, either bare or wrapped in <code>{ "artifact": ... }</code>, so you can also
-export a map from your own workspace and hand it to a colleague.</p>
+<p>Run <code>npx @holostaff/cli import</code> with no name to list every available preset.</p>
+<p>Under the hood <code>import</code> is sugar for <code>scan --from</code>, which also accepts an
+<code>https</code> URL or a local file path. The file is a plain scan artifact, either
+bare or wrapped in <code>{ "artifact": ... }</code>, so you can also export a map from
+your own workspace and hand it to a colleague.</p>
 <h2 id="when-to-use-a-preset">When to use a preset</h2>
 <p>Use a preset when you self-host a product that already has one. The scan of
 public code produces the same map for everyone, so there is no reason to spend

@@ -5,16 +5,19 @@ gives you that product's map in your own workspace in about a second. No scan
 runs, no model spend, and nothing reads your code.
 
 ```bash
-npx @holostaff/cli scan --from https://raw.githubusercontent.com/Holostaff-AI/holostaff-cli/master/presets/opnform.json
+npx @holostaff/cli import opnform
 ```
 
 Sign-in happens in the same command if you are not already signed in. The map
 lands as a new source in your workspace: your copy, yours to edit on the
 canvas.
 
-`--from` accepts an `https` URL or a local file path. The file is a plain scan
-artifact, either bare or wrapped in `{ "artifact": ... }`, so you can also
-export a map from your own workspace and hand it to a colleague.
+Run `npx @holostaff/cli import` with no name to list every available preset.
+
+Under the hood `import` is sugar for `scan --from`, which also accepts an
+`https` URL or a local file path. The file is a plain scan artifact, either
+bare or wrapped in `{ "artifact": ... }`, so you can also export a map from
+your own workspace and hand it to a colleague.
 
 ## When to use a preset
 

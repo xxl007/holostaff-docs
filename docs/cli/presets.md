@@ -36,6 +36,8 @@ Presets live in the CLI repository under
 | Preset | Product |
 |---|---|
 | `opnform.json` | [OpnForm](https://github.com/OpnForm/OpnForm), open source form builder |
+| `formbricks.json` | [Formbricks](https://github.com/formbricks/formbricks), open source survey platform |
+| `atlas-cmms.json` | [Atlas CMMS](https://github.com/Grashjs/cmms), open source maintenance management |
 
 ## Example: your self-hosted OpnForm
 

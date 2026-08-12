@@ -5,7 +5,7 @@ gives you that product's map in your own workspace in about a second. No scan
 runs, no model spend, and nothing reads your code.
 
 ```bash
-npx @holostaff/cli import opnform
+npx @holostaff/cli import atlas-cmms
 ```
 
 Sign-in happens in the same command if you are not already signed in. The map
@@ -35,27 +35,31 @@ Presets live in the CLI repository under
 
 | Preset | Product |
 |---|---|
-| `opnform.json` | [OpnForm](https://github.com/OpnForm/OpnForm), open source form builder |
-| `formbricks.json` | [Formbricks](https://github.com/formbricks/formbricks), open source survey platform |
 | `atlas-cmms.json` | [Atlas CMMS](https://github.com/Grashjs/cmms), open source maintenance management |
+| `formbricks.json` | [Formbricks](https://github.com/formbricks/formbricks), open source survey platform |
+| `opnform.json` | [OpnForm](https://github.com/OpnForm/OpnForm), open source form builder |
 
-## Example: your self-hosted OpnForm
+Want a preset for a product you self-host? Any checkout can be scanned, and a
+map exported from your workspace works as a preset file for your whole team.
 
-OpnForm ships with an optional Holostaff plugin that stays off until two
-environment variables are set. To turn it on for your install:
+## From map to copilot
 
-1. Import the preset with the command above.
-2. Open the map it prints, and copy the two ids from the dashboard: the
-   workspace id and the source id.
-3. Set them in `client/.env` and rebuild:
+The preset gives you the map. To put the copilot in front of your users, the
+product's frontend also needs the Holostaff SDK plugin, and there are two
+ways to get it:
 
-```bash
-NUXT_PUBLIC_HOLOSTAFF_TENANT_ID=your_workspace_id
-NUXT_PUBLIC_HOLOSTAFF_SOURCE_ID=your_source_id
-```
+1. **The product already ships the plugin.** Some products include an
+   optional, off-by-default Holostaff plugin. There, enabling the copilot is
+   two environment variables on your install, the workspace id and source id
+   shown on your imported map, set wherever that product documents them.
+2. **Add it with the CLI.** In any checkout, `holostaff deploy` wires the
+   same env-gated, off-by-default plugin into the frontend and opens a pull
+   request against your repository, so you review every line before anything
+   ships.
 
-Nothing changes for your form respondents. The copilot only appears for the
-people building forms, never inside published forms or embeds.
+Either way the plugin loads only for signed-in users of the product itself.
+Public surfaces such as published forms, surveys, or request portals never
+load it.
 
 ## Provenance
 

@@ -5,8 +5,11 @@ gives you that product's map in your own workspace in about a second. No scan
 runs, no model spend, and nothing reads your code.
 
 ```bash
-npx @holostaff/cli import atlas-cmms
+npx @holostaff/cli import <preset>
 ```
+
+`<preset>` is a name from the [available presets](#available-presets) list
+below, `atlas-cmms` for example.
 
 Sign-in happens in the same command if you are not already signed in. The map
 lands as a new source in your workspace: your copy, yours to edit on the

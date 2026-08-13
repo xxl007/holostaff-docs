@@ -39,6 +39,7 @@ Presets live in the CLI repository under
 | Preset | Product |
 |---|---|
 | `atlas-cmms.json` | [Atlas CMMS](https://github.com/Grashjs/cmms), open source maintenance management |
+| `documenso.json` | [Documenso](https://github.com/documenso/documenso), open source document signing |
 | `formbricks.json` | [Formbricks](https://github.com/formbricks/formbricks), open source survey platform |
 | `opnform.json` | [OpnForm](https://github.com/OpnForm/OpnForm), open source form builder |
 

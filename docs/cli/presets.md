@@ -42,6 +42,7 @@ Presets live in the CLI repository under
 | `documenso.json` | [Documenso](https://github.com/documenso/documenso), open source document signing |
 | `formbricks.json` | [Formbricks](https://github.com/formbricks/formbricks), open source survey platform |
 | `opnform.json` | [OpnForm](https://github.com/OpnForm/OpnForm), open source form builder |
+| `twenty.json` | [Twenty](https://github.com/twentyhq/twenty), open source CRM |
 
 Want a preset for a product you self-host? Any checkout can be scanned, and a
 map exported from your workspace works as a preset file for your whole team.

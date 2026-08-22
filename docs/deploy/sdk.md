@@ -1,6 +1,6 @@
 # The SDK
 
-`@holostaff/sdk` is the small client the deploy PR adds to your app. It carries identity, stage detection, custom signals, and the copilot presence layer. You rarely write this code yourself: the PR places it, and this page explains what you're reviewing.
+`@holostaff/sdk` is the small client the deploy PR adds to your app. It carries identity, stage detection, custom signals, and the autopilot layer: the offer, the handover loop, and the safety envelope, in the user's own session. You rarely write this code yourself: the PR places it, and this page explains what you're reviewing.
 
 ```bash
 npm install @holostaff/sdk
@@ -45,11 +45,13 @@ holostaff.emitSignal('first_resource_created', { kind: 'project' })
 | `identify(userId)` | Sign-in | Links the device to your user |
 | `clearIdentity()` | Logout | Unlinks it |
 | `emitSignal(name, data?)` | Product events | Custom signals your map declared |
-| `reportOutcome(id, outcome)` | Custom UIs only | Reports an intervention outcome. The built-in widget does this automatically |
+| `reportOutcome(id, outcome)` | Custom UIs only | Reports an outcome. The built-in layer does this automatically |
 
-## The presence layer
+## The autopilot layer
 
-The SDK also renders the copilot's presence: the chip that shows a copilot is on duty, notes it can leave, and the Stage where it talks with the user face to face. All of it ships through the same deploy PR; none of it requires custom code.
+The SDK renders everything the user sees of an autopilot: the offer card on enabled workflows, the intent overlay at handover, the progress panel with its always-visible Stop, questions anchored beside the fields they concern, and the Allow pill on consequential clicks. Autopilots carry the task's name (or the display name you set); there is no face and no chat. All of it ships through the same deploy PR; none of it requires custom code.
+
+The safety rules live in the SDK's executor and on the server, not in configuration: sensitive fields are hard-refused, consequential clicks wait for Allow, and any user keystroke pauses the run. See [the safety envelope](../how-it-works/guarded-actions.md).
 
 ## Instrumentation is verified, not trusted
 

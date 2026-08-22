@@ -27,17 +27,17 @@ Use `--dry-run` to see the plan without touching anything, and `--force` to push
 
 ## The PR
 
-The PR is small and readable: the SDK dependency, the `init` call, stage markers at journey boundaries, and the embed for the copilot presence. Your team reviews it like any change.
+The PR is small and readable: the SDK dependency, the `init` call, stage markers at journey boundaries, and the embed for the autopilot layer. Your team reviews it like any change.
 
 ![A deploy pull request](../assets/images/app/deploy-pr.png)
 
-Merging the PR makes the version live. The copilot's status flips to published, and from that moment its interventions and outcomes stream into [Impact](../impact/index.md).
+Merging the PR makes the integration live. From that moment, certified autopilots with their toggle on start offering, and every handover streams into [Impact](../impact/index.md).
 
 ## Rolling back
 
 Everything is revocable:
 
-- **Pause a copilot** from the roster: it stays deployed but stops intervening.
+- **Turn an autopilot's deploy toggle off** on the Autopilots page: the integration stays, new offers stop instantly.
 - **Revert the PR** to remove the integration entirely.
 
 ## Troubleshooting

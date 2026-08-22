@@ -8,7 +8,7 @@ The PR is ordinary, readable code:
 
 - **SDK init**: the Holostaff SDK initialized in your app.
 - **Journey stage markers**: small markers that tell the SDK where the user is on the journey map.
-- **The embed**: the script tag that loads the copilot into your app.
+- **The embed**: the script tag that loads the autopilot layer into your app.
 
 That is the whole footprint. There is no hidden injection, no tag manager side door, and no change that does not appear in the diff.
 
@@ -18,7 +18,7 @@ The change goes through the same review your team applies to any other code. If 
 
 ## Merging is going live
 
-There is no separate publish button that bypasses your process. When the PR merges and your normal deploy pipeline runs, the copilot is live. Your existing release process is the release process.
+There is no separate publish button that bypasses your process. When the PR merges and your normal deploy pipeline runs, the integration is live and certified autopilots can offer. Your existing release process is the release process.
 
 ## Reverting is rollback
 

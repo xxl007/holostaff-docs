@@ -1,37 +1,37 @@
-# Rehearsal Evaluations
+# Certification
 
-Rehearsal evaluations are how Holostaff tests a copilot before it ever meets a real user. Simulated users run your product's real flows in real browsers, the copilot has to notice and intervene, and every run is graded. A copilot that fails rehearsal does not go live.
+Certification is the rule that no autopilot meets a human before it has served synthetic users, on every build it ships to. It is a gate, not a report.
 
-## Real flows, real browsers
+## Two levels, both required
 
-A rehearsal is not a unit test or a mocked conversation. A simulated user is an AI visitor driving a real browser session against your actual product. It signs up, fills forms, hesitates, gets stuck, and abandons, the way real users do. Your copilot runs for real during the session and has to do its job: spot the struggle and step in.
+A workflow's autopilot is deployable only when both levels pass on the current build:
 
-## Scenarios come from your journey map
+- **Level 1 — the workflow works.** Synthetic users complete the workflow themselves against your deployment. If real users could not get through it unaided, that is worth knowing before an autopilot is offered on it.
+- **Level 2 — the handover works.** Synthetic users hand the task over and the autopilot completes it: offer, intent form, steps, questions, Allow gates, done.
 
-You do not write test cases. Every workflow and risk moment on your journey map becomes a scenario: complete the flow and reach the outcome, hesitate at the sensitive step, quietly give up mid-form. The map your scan produced already knows where users can struggle, so it already knows what to rehearse.
+One **Certify** click on the [Autopilots page](../autopilots/create.md) runs both.
 
-## Every run is graded
+## On every PR
 
-Each run gets a verdict with a reason:
+Certification is continuous. Wire the suite into CI and every pull request gets its runs; the PR comment reads **workflow certified (n/n runs)** when the suite passes. Green means the autopilots on that build are certified; a failing suite takes the offer down rather than shipping a broken handover.
 
-- **Pass**: the intervention fired at the right moment and the simulated user reached the outcome.
-- **Fail**: with the reason recorded. A fail can be the copilot's fault, or it can be a product finding, because sometimes the simulated user hits a real bug. Both are worth knowing before launch.
-- **Needs setup**: the scenario needs one-time data, like a seeded test account.
+```bash
+holostaff scan --quiet --json --out artifact.json   # CI-friendly scan
+```
 
-You can watch any run: the session timeline, the live browser, the verdict, and the reasoning behind it.
+CI runs use [workspace API keys](../cli/index.md#ci-keys) and count as 1 unit each on the [simulation-runs meter](../billing/index.md); runs in Holostaff's cloud count as 3.
 
-## Failing rehearsal blocks going live
+## Failing certification blocks going live
 
-This is the point of the whole system. Rehearsal is the gate, not a report. A copilot that cannot pass its scenarios has no business meeting your users, so it does not. Fix the persona, the intervention, or the product bug the rehearsal surfaced, re-run, and go live when it passes.
+A workflow that cannot pass its scenarios has no business carrying an offer, so it does not. Fix the flow, the autopilot's intent form, or the product bug the run surfaced, re-run, and go live when it passes.
 
-## When rehearsals run
+## When certification re-runs
 
-- After hiring a copilot, before its first deploy.
-- After a re-scan changes the workflows in its stage.
-- After editing identity or persona, since tone changes behavior.
-- Before go-live, as the final gate.
+- Before an autopilot's first deploy.
+- On every PR, from CI.
+- After a re-scan changes a workflow's steps.
 
 ## Related
 
-- [Evaluations in the dashboard](../evaluations/index.md): the coverage board, run details, and verdicts.
-- [Guarded Actions](guarded-actions.md): the rules a copilot follows once it is live.
+- [Evaluations in the dashboard](../evaluations/index.md): personas, environments, the board, runs, and clips.
+- [The safety envelope](guarded-actions.md): the rules an autopilot follows once it is live.

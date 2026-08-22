@@ -1,6 +1,6 @@
-site_name: Holostaff AI Documentation
+site_name: Holostaff Documentation
 site_url: https://docs.holostaff.ai
-site_description: Documentation for Holostaff AI. In-product customer success on autopilot. AI staff learn your product from your code, spot users the moment they struggle, and step in right in the session. Shipped with one PR.
+site_description: "Create a workflow autopilot for your product: map, rehearse, certify, deploy, verify. Documentation for Holostaff."
 site_author: Holostaff AI Team
 use_directory_urls: false
 
@@ -50,7 +50,10 @@ plugins:
   - search
   - redirects:
       redirect_maps:
-        ai-staff/index.md: copilots/index.md
+        ai-staff/index.md: autopilots/index.md
+        copilots/index.md: autopilots/index.md
+        copilots/create.md: autopilots/create.md
+        getting-started/onboarding-wizard.md: getting-started/quickstart.md
         analytics/index.md: impact/index.md
         knowledge/index.md: journey-maps/index.md
 
@@ -80,24 +83,23 @@ nav:
       - Quickstart: getting-started/quickstart.md
       - Your Account: getting-started/creating-account.md
       - The Dashboard: getting-started/dashboard.md
-  - Journey Maps:
+  - Map:
       - What is a Journey Map: journey-maps/index.md
       - The Canvas: journey-maps/canvas.md
-  - Copilots:
-      - Your AI Staff: copilots/index.md
-      - Creating a Copilot: copilots/create.md
-  - How It Works:
-      - Guarded Actions: how-it-works/guarded-actions.md
-      - Rehearsal Evaluations: how-it-works/rehearsal-evaluations.md
-      - Deploying via Pull Request: how-it-works/deploying-via-pull-request.md
-      - What Leaves Your Machine: how-it-works/what-leaves-your-machine.md
-  - Evaluations:
-      - Rehearsing with Simulated Users: evaluations/index.md
-  - Deploying:
+  - Autopilots:
+      - Workflow Autopilots: autopilots/index.md
+      - Creating an Autopilot: autopilots/create.md
+      - The Safety Envelope: how-it-works/guarded-actions.md
+  - Rehearse & Certify:
+      - Evaluations & Synthetic Users: evaluations/index.md
+      - Certification: how-it-works/rehearsal-evaluations.md
+  - Deploy:
       - The Deploy Flow: deploy/index.md
       - The SDK: deploy/sdk.md
-  - Impact:
-      - Measuring What Changed: impact/index.md
+      - Deploying via Pull Request: how-it-works/deploying-via-pull-request.md
+      - What Leaves Your Machine: how-it-works/what-leaves-your-machine.md
+  - Verify:
+      - Impact: impact/index.md
   - CLI Reference:
       - Commands & CI: cli/index.md
       - Preset Journey Maps: cli/presets.md
@@ -105,9 +107,9 @@ nav:
       - Workspaces & Collaboration: workspaces/index.md
       - Team Management: workspaces/team-management.md
   - Billing:
-      - Billing & Subscriptions: billing/index.md
+      - Billing & the Two Meters: billing/index.md
   - Support:
-      - Knowledge Base & FAQs: support/index.md
+      - Support & Help: support/index.md
       - Data Deletion Policy: support/data-deletion.md
       - Privacy Policy: support/privacy-policy.md
       - Terms of Service: support/terms-of-service.md

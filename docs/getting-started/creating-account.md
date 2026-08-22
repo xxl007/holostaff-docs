@@ -20,7 +20,7 @@ You can start scanning right away. Email verification is required only where it 
 
 ## Your workspace
 
-Every account starts with a workspace. The workspace holds your scanned products (journey maps), your copilots, evaluation results, and impact data. Working with a team or multiple products? See [Workspaces & Collaboration](../workspaces/index.md).
+Every account starts with a workspace. The workspace holds your scanned products (journey maps), your autopilots, evaluation results, and impact data. Working with a team or multiple products? See [Workspaces & Collaboration](../workspaces/index.md).
 
 ## Next
 

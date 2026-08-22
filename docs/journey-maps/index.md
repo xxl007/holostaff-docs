@@ -27,9 +27,9 @@ For each product the artifact holds:
 - **Routes and components** — the surfaces users move through
 - **Workflows** — multi-step user flows, each with its stage and steps
 - **Risk moments** — where users stall, loop, or drop off
-- **Proposed interventions** — what a copilot could do at each risk moment
+- **Handover candidates** — the workflows and moments worth an autopilot
 - **Copy strings** — the literal text users see, with locations
-- **Brand voice** — tone and keywords, so copilots sound like you
+- **Brand voice** — tone and keywords, so anything on-screen sounds like you
 
 ## One product, several repos
 
@@ -38,4 +38,4 @@ A product that spans multiple repositories can merge scans into one source: run 
 ## Next
 
 - [Working on the canvas](canvas.md)
-- [Hire a copilot for a stage](../copilots/create.md)
+- [Create an autopilot on a workflow](../autopilots/create.md)

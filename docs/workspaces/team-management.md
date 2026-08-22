@@ -1,6 +1,6 @@
 # Team Management in Workspaces
 
-Holostaff AI's Team Management features allow you to collaborate with colleagues and partners within your Workspaces. You can invite new members, assign them specific roles, and manage their access to your AI staff and knowledge sources.
+Holostaff AI's Team Management features allow you to collaborate with colleagues and partners within your Workspaces. You can invite new members, assign them specific roles, and manage their access to your maps and autopilots.
 
 Effective team management ensures that the right people have the necessary access to contribute to your AI initiatives while maintaining security and organizational clarity.
 
@@ -10,9 +10,9 @@ In Holostaff AI, each team member within a Workspace is assigned a role. These r
 
 *   **Owner:** Typically the creator of the Workspace or someone granted full administrative control. Owners have complete access to all features, including billing, member management, and Workspace deletion. There can be multiple owners.
 *   **Admin:** Possesses comprehensive administrative privileges within the Workspace, similar to an Owner, but often without the ability to delete the Workspace itself or manage billing fully (specific permissions may vary based on plan details).
-*   **Editor:** Can create, edit, and delete AI staff members and manage knowledge sources. They can configure AI behavior, test interactions, and deploy AI staff.
-*   **Member:** Can view AI staff members and knowledge sources, participate in testing, and access analytics. They typically cannot make significant changes to AI configurations or deployments.
-*   **Viewer:** Has read-only access to AI staff details, configurations (without editing capabilities), and analytics. Ideal for stakeholders who need to monitor progress without making changes.
+*   **Editor:** Can create, edit, and certify autopilots and manage journey maps. They can run evaluations and deploy.
+*   **Member:** Can view autopilots and journey maps, run evaluations, and access Impact. They typically cannot change configurations or deployments.
+*   **Viewer:** Has read-only access to autopilots, maps, and Impact. Ideal for stakeholders who need to monitor progress without making changes.
 
 ## Inviting New Members
 

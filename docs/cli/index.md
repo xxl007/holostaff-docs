@@ -1,6 +1,6 @@
 # CLI Reference
 
-`@holostaff/cli` is the front door: scan, refine, instrument, embed, and deploy, all from your terminal.
+`@holostaff/cli` is the front door: scan, refine, instrument, embed, and deploy, all from your terminal. Scan your repo, map your workflows, and create workflow autopilots your users can hand a task to.
 
 ```bash
 npx @holostaff/cli        # or: npm install -g @holostaff/cli
@@ -16,7 +16,7 @@ Requires Node 20+. Running it bare opens the interactive shell; anything you typ
 | `/scan --add-repo` | Merge this repo into an existing source (multi-repo product) |
 | `/refine` | Edit the product's identity (name, description, notes) without re-scanning |
 | `/instrument` | Draft the SDK integration patch, show the diff, commit to a branch |
-| `/embed` | Add the copilot presence to your app entry, commit to a branch |
+| `/embed` | Add the autopilot layer to your app entry, commit to a branch |
 | `/whoami` · `/workspace` · `/login` · `/logout` | Auth and session utilities |
 | `/help` · `/quit` | Help / exit |
 
@@ -36,7 +36,7 @@ Requires Node 20+. Running it bare opens the interactive shell; anything you typ
 `/scan` publishes in two phases so you never wait on a long scan to see your map:
 
 1. **Skeleton** — routes, components, and workflows with stages, live in about 90 seconds.
-2. **Deep pass** — risks, interventions, signals, copy, brand voice; lands as a second version while you explore. The dashboard shows the source as "deepening" until it completes.
+2. **Deep pass** — risks, handover candidates, signals, copy, brand voice; lands as a second version while you explore. The dashboard shows the source as "deepening" until it completes.
 
 Pass 1 uploads automatically; opt out with `--no-auto-upload`.
 

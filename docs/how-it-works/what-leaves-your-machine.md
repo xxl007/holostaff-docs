@@ -13,7 +13,7 @@ The uploaded artifact contains only:
 - **Workflows** and their steps.
 - **Coverage gaps** the scan flagged.
 
-That is the complete list. It is what Holostaff needs to build your journey map and give your copilots their working knowledge of the product, and nothing more.
+That is the complete list. It is what Holostaff needs to build your journey map and give your autopilots their working knowledge of the product, and nothing more.
 
 ## What never leaves
 

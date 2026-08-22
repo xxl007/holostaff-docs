@@ -47,14 +47,14 @@ Presets live in the CLI repository under
 Want a preset for a product you self-host? Any checkout can be scanned, and a
 map exported from your workspace works as a preset file for your whole team.
 
-## From map to copilot
+## From map to autopilot
 
-The preset gives you the map. To put the copilot in front of your users, the
+The preset gives you the map. To put an autopilot in front of your users, the
 product's frontend also needs the Holostaff SDK plugin, and there are two
 ways to get it:
 
 1. **The product already ships the plugin.** Some products include an
-   optional, off-by-default Holostaff plugin. There, enabling the copilot is
+   optional, off-by-default Holostaff plugin. There, enabling it is
    two environment variables on your install, the workspace id and source id
    shown on your imported map, set wherever that product documents them.
 2. **Add it with the CLI.** In any checkout, `holostaff deploy` wires the

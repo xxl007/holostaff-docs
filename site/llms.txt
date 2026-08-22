@@ -1,59 +1,63 @@
-# Holostaff AI
+# Holostaff AI Documentation
 
-> Holostaff AI puts in-product customer success on autopilot. AI staff live inside your
-> product. They know it from your code, spot each user the moment they struggle, and step
-> in right there in the session. Shipped to your app with one pull request.
+> Holostaff creates workflow autopilots for software products. An autopilot is a
+> "Do it for me" button on a workflow. The user hands over the task. The autopilot
+> completes it on screen, in the user's own session. Autopilots are built and
+> certified by synthetic users before any human meets them, and deployed with one
+> pull request.
 
-Website: https://www.holostaff.ai/
 Docs: https://docs.holostaff.ai/
+Website: https://www.holostaff.ai/
 CLI: https://www.npmjs.com/package/@holostaff/cli
 Contact: hello@holostaff.ai
 
-## What Holostaff is
+## The lifecycle
 
-Holostaff gives every user of a software product a personal success manager. These are
-AI staff members that work inside the product itself, not in a separate chat window or
-an email sequence. They learn the product by reading its codebase, watch each user's
-session for signs of struggle, and intervene at the moment it matters: guiding, doing
-the step together with the user, or fixing the blocker directly on screen.
+1. Map: one scan (`npx @holostaff/cli`) turns the repo into a journey map of the
+   product's workflows. Source code never leaves the machine; a trust report
+   itemizes the artifact before upload.
+2. Rehearse: synthetic users (AI personas in real browsers) walk the real flows
+   against a registered environment and show the team what breaks.
+3. Certify: suites gate every PR, two levels per workflow. Level 1: synthetic
+   users complete the workflow themselves. Level 2: they hand it to the autopilot
+   and it completes it. Both must pass before deploy.
+4. Deploy: one PR adds the SDK (offer card, handover loop, safety envelope).
+   Certified autopilots go live with a toggle; off stops new offers instantly.
+5. Verify: every handover is logged, verified against the workflow's goal state,
+   and only counted (and billed) when complete.
 
-It is not a chatbot (a chatbot waits to be asked). It is not a product tour (tours are
-pre-recorded and the same for everyone). It is not a customer-success back office tool
-(those produce health scores and emails after the fact). Holostaff acts inside the
-product, during the session, one user at a time.
+## The safety envelope
 
-## How it works
+- The autopilot runs in the user's own session, same origin, user's own
+  permissions. No credentials pass through Holostaff.
+- Payment, password, and code fields are hard-refused: the autopilot points, the
+  user types.
+- Consequential clicks (pay, delete, send, sign) wait for the user's Allow.
+- Questions appear beside the field they concern, never over the form.
+- Any keystroke pauses the run. Stop is always on screen. Hard step budgets cap
+  every run.
 
-1. Scan. Run `npx @holostaff/cli` in your repo. An agent reads the code and learns the
-   product the way an engineer would.
-2. Map. It draws every user journey on a canvas and flags where users stall, get
-   confused, or drop off.
-3. Hire. Turn its proposals into staff. Each one gets a face, a voice, and a job:
-   onboarding, activation, retention, expansion.
-4. Rehearse. Before any real user sees them, staff face simulated users. AI visitors run
-   the real scenarios and every reply is graded on a coverage board.
-5. Ship. `holostaff deploy` opens a pull request. Engineers review it like any change.
-   One line in the app puts staff on duty.
-6. Measure. A built-in impact dashboard shows lift on activation, retention, and
-   expansion, plus every intervention as it happens.
+## Pricing
 
-## Key facts
+Two meters, nothing else: simulation runs (build and certify; our-cloud runs
+count 3) and completed handovers (a handover that stops, fails, or is handed
+back costs nothing). Creation is never metered. Team $99/mo (300 runs, 100
+handovers). Growth $299/mo (1,500 runs, 500 handovers). 14-day trial, card
+required, trial usage free.
 
-- Setup: one CLI scan; no instrumentation, no data migration.
-- Works with any web stack; staff run from one script tag plus the SDK.
-- Control: every staff member is approved by the customer, rehearsed against simulated
-  users, shipped through normal PR review, logged, and revocable.
-- Pricing: free to start, no credit card; usage billed on engagement.
-- Category: in-product customer success, AI success manager, user activation and
-  onboarding software.
+## Key pages
 
-## Pages
-
-- https://www.holostaff.ai/ : product overview
-- https://www.holostaff.ai/pricing : pricing
-- https://www.holostaff.ai/about : company
-- https://www.holostaff.ai/blog : writing on in-product customer success
-- https://docs.holostaff.ai/ : product documentation
-- https://www.npmjs.com/package/@holostaff/cli : the CLI package
-
-For an extended description see https://www.holostaff.ai/llms-full.txt
+- https://docs.holostaff.ai/ : documentation home
+- https://docs.holostaff.ai/getting-started/quickstart.html : one command to the map
+- https://docs.holostaff.ai/journey-maps/index.html : what a journey map is
+- https://docs.holostaff.ai/autopilots/index.html : what a workflow autopilot is
+- https://docs.holostaff.ai/autopilots/create.html : creating and certifying one
+- https://docs.holostaff.ai/how-it-works/guarded-actions.html : the safety envelope
+- https://docs.holostaff.ai/how-it-works/rehearsal-evaluations.html : certification
+- https://docs.holostaff.ai/evaluations/index.html : synthetic users, runs, verdicts
+- https://docs.holostaff.ai/deploy/index.html : the PR deploy flow
+- https://docs.holostaff.ai/deploy/sdk.html : the SDK and the autopilot layer
+- https://docs.holostaff.ai/how-it-works/what-leaves-your-machine.html : scan privacy
+- https://docs.holostaff.ai/impact/index.html : verified handovers and lift
+- https://docs.holostaff.ai/billing/index.html : the two meters
+- https://docs.holostaff.ai/cli/index.html : CLI reference and CI mode

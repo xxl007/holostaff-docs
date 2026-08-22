@@ -1,52 +1,50 @@
-# Holostaff AI Documentation
+# Holostaff Documentation
 
-Holostaff AI puts in-product customer success on autopilot. AI staff live inside your product. They know it from your code, spot each user the moment they struggle, and step in right there in the session. Shipped to your app with one pull request.
+Holostaff creates workflow autopilots for your product. An autopilot is a "Do it for me" button on a workflow: the user hands over the task, and the autopilot completes it on screen, in the user's own session. Autopilots are built and certified by synthetic users before any human meets them, and deployed with one pull request.
 
-## What is Holostaff AI?
+## What is a workflow autopilot?
 
-Holostaff gives every user of your product a personal success manager.
+Every product has workflows users dread: the long form, the bulk import, the multi-step setup. A workflow autopilot takes those over on request.
 
-These success managers are AI staff members that work inside your product itself. Not in a separate chat window. Not in an email sequence. They learn your product by reading its codebase, watch each user's session for signs of struggle, and help at the exact moment it matters. They can talk, point, guide, or take the stuck step together with the user on screen.
+The user clicks the offer, watches the autopilot do the task step by step, answers a short question when the autopilot is unsure, and personally approves anything consequential. Sensitive fields are never typed by the autopilot.
 
-Holostaff is not a chatbot. A chatbot waits to be asked. It is not a product tour. Tours are pre-recorded and the same for everyone. It is not a customer success back office. Those tools produce health scores and emails after the fact. Holostaff acts inside the product, during the session, one user at a time.
+Holostaff is not a chatbot. It never chats: it acts, and it shows its work on screen. It is not a product tour: a tour explains the task, an autopilot does it. And it is not autonomous: handover is always the user's explicit act.
 
-## How it works
+## The lifecycle
 
-1. **Scan.** Run `npx @holostaff/cli` in your repository. An agent reads the code and learns your product the way an engineer would. No instrumentation, no data migration.
-2. **Map.** The scan draws every user journey on a canvas: routes, workflows, screens, and the places users stall or drop off. This is your Journey Map.
-3. **Hire.** Turn the map's proposals into staff. Each copilot gets a face, a voice, and a job tied to a journey stage: onboarding, activation, retention, expansion.
-4. **Rehearse.** Before any real user meets them, your staff face simulated users. AI visitors drive a real browser through your actual scenarios, and every reply is graded on the Evaluations board.
-5. **Ship.** `holostaff deploy` opens a pull request. Your engineers review it like any other change. One line plus the SDK puts staff on duty.
-6. **Measure.** The Impact dashboard attributes activation, retention, and expansion lift to specific interventions, with a live feed as they happen.
+| Stage | What happens |
+|---|---|
+| **[Map](journey-maps/index.md)** | One scan turns your repo into a journey map of your workflows. |
+| **[Rehearse](evaluations/index.md)** | Synthetic users walk your real flows and show you what breaks. |
+| **[Certify](how-it-works/rehearsal-evaluations.md)** | Suites gate every PR. An autopilot ships only while its workflow passes. |
+| **[Deploy](deploy/index.md)** | The offer appears on the workflow. The user hands over. The autopilot does the task in their session. |
+| **[Verify](impact/index.md)** | Every handover is logged, verified, and only then counted. |
 
 ## The product surfaces
 
-* **Journey Maps.** The canvas your scan produces. Every stage a user passes through, with coverage gaps flagged.
-* **Copilots.** Your AI staff roster. Create, assign, and manage the success managers on duty.
-* **Evaluations.** The rehearsal room. Simulated users pressure-test every copilot before launch and after every change.
-* **Impact.** Proof of lift. Funnel views, intervention outcomes, and live activity.
+* **Journey Maps.** The canvas your scan produces: every workflow, with risk and handover moments flagged.
+* **Personas.** Your synthetic users: the AI people who rehearse your product before real users do.
+* **Autopilots.** One per workflow. Their certification state, and the deploy toggle.
+* **Environments.** The deployments your simulation runs point at.
+* **Evaluations.** The coverage board: scenarios, runs, verdicts, and clips.
+* **Impact.** What changed, attributed, with a live feed.
 
 ## Who is in control?
 
-You are.
+You are, and your user is.
 
-* Every staff member is approved by you before going live.
-* Staff rehearse against simulated users first, and you see the grades.
+* Autopilots are created by your team and certified by synthetic users on every build they ship to.
 * Deployment goes through your normal pull request review.
-* Every intervention is logged. Everything is revocable.
-
-## Who is Holostaff for?
-
-SaaS and software teams that lose users between sign-up and first value. If your analytics show the drop-off but nobody is there when it happens, Holostaff staffs that moment.
-
-![A journey map on the canvas](assets/images/app/canvas-workflow.png)
+* In the session, the autopilot runs with the user's own permissions. Consequential clicks need the user's Allow. Sensitive fields stay human-typed. Any keystroke pauses it, and Stop is always on screen.
+* Every handover is logged. Everything is revocable.
 
 ## Quick links
 
 * [Quickstart](getting-started/quickstart.md) — one command to put your product on the map
 * [Journey Maps](journey-maps/index.md) — the canvas your scan produces
-* [Copilots](copilots/index.md) — hire, assign, publish
-* [Evaluations](evaluations/index.md) — simulated users rehearse your staff
+* [Autopilots](autopilots/index.md) — what they are and how they behave
+* [Creating an autopilot](autopilots/create.md) — from workflow to certified to live
+* [The safety envelope](how-it-works/guarded-actions.md) — the rules an autopilot can never break
 * [Deploying](deploy/index.md) — the PR path and [the SDK](deploy/sdk.md)
-* [Impact](impact/index.md) — what your copilots changed
+* [Billing](billing/index.md) — two meters, nothing else
 * [CLI reference](cli/index.md) — every command, CI mode, and what leaves your machine

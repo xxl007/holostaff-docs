@@ -10,7 +10,7 @@ Four numbers, over a window you pick (7, 30, 90 days, or all time):
 
 - **Assisted progressions** — users moved to the next stage by an assist
 - **Engaged rate** — the share of offers that got a positive response
-- **Interventions fired** — assists shown in the window
+- **Assists shown** — autopilot assists shown in the window
 - **Users reached** — distinct users an autopilot was active for
 
 ## Handovers are verified before they count

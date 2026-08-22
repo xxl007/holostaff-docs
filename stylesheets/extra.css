@@ -1,0 +1,41 @@
+/* Custom colors for Holostaff AI theme */
+
+/* Light Mode Palette */
+[data-md-color-scheme="default"] {
+  /* Primary Color: Holostaff AI Primary Blue */
+  --md-primary-fg-color: #284281;
+  --md-primary-fg-color--light: #3E5BA2; /* Lighter shade for subtle highlights/hover */
+  --md-primary-fg-color--dark: #253660;  /* Holostaff AI Primary Darken */
+
+  /* Accent Color: Holostaff AI Info Blue (vibrant, good for interactive elements) */
+  --md-accent-fg-color: #16B1FF;
+
+  /* Background and Text Colors */
+  --md-default-fg-color: #201f1f; /* On-Background Light */
+  --md-default-bg-color: #f5f7ec; /* Background Light */
+
+  /* Optional: Fine-tune other default colors if needed */
+  /* --md-default-bg-color--light: hsl(0, 0%, 98%); */
+  /* --md-default-bg-color--dark: hsl(0, 0%, 95%); */
+  /* --md-code-fg-color: rgba(0, 0, 0, 0.87); */
+  /* --md-code-bg-color: rgba(0, 0, 0, 0.05); */
+}
+
+/* Dark Mode Palette */
+[data-md-color-scheme="slate"] {
+  /* Primary Color: Holostaff AI Primary Blue (consistent across themes) */
+  --md-primary-fg-color: #284281;
+  --md-primary-fg-color--light: #3E5BA2; /* Consistent lighter shade */
+  --md-primary-fg-color--dark: #253660;  /* Consistent darker shade */
+
+  /* Accent Color: Holostaff AI Info Blue (consistent across themes) */
+  --md-accent-fg-color: #16B1FF;
+
+  /* Background and Text Colors */
+  --md-default-fg-color: #f5f7ec; /* On-Background Dark */
+  --md-default-bg-color: #201f1f; /* Background Dark */
+
+  /* Optional: Fine-tune code block colors for dark theme if default is not optimal */
+  /* --md-code-fg-color: rgba(255, 255, 255, 0.87); */
+  /* --md-code-bg-color: rgba(255, 255, 255, 0.05); */
+}

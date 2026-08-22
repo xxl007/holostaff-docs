@@ -1,0 +1,63 @@
+# Holostaff AI Documentation
+
+> Holostaff creates workflow autopilots for software products. An autopilot is a
+> "Do it for me" button on a workflow. The user hands over the task. The autopilot
+> completes it on screen, in the user's own session. Autopilots are built and
+> certified by synthetic users before any human meets them, and deployed with one
+> pull request.
+
+Docs: https://docs.holostaff.ai/
+Website: https://www.holostaff.ai/
+CLI: https://www.npmjs.com/package/@holostaff/cli
+Contact: hello@holostaff.ai
+
+## The lifecycle
+
+1. Map: one scan (`npx @holostaff/cli`) turns the repo into a journey map of the
+   product's workflows. Source code never leaves the machine; a trust report
+   itemizes the artifact before upload.
+2. Rehearse: synthetic users (AI personas in real browsers) walk the real flows
+   against a registered environment and show the team what breaks.
+3. Certify: suites gate every PR, two levels per workflow. Level 1: synthetic
+   users complete the workflow themselves. Level 2: they hand it to the autopilot
+   and it completes it. Both must pass before deploy.
+4. Deploy: one PR adds the SDK (offer card, handover loop, safety envelope).
+   Certified autopilots go live with a toggle; off stops new offers instantly.
+5. Verify: every handover is logged, verified against the workflow's goal state,
+   and only counted (and billed) when complete.
+
+## The safety envelope
+
+- The autopilot runs in the user's own session, same origin, user's own
+  permissions. No credentials pass through Holostaff.
+- Payment, password, and code fields are hard-refused: the autopilot points, the
+  user types.
+- Consequential clicks (pay, delete, send, sign) wait for the user's Allow.
+- Questions appear beside the field they concern, never over the form.
+- Any keystroke pauses the run. Stop is always on screen. Hard step budgets cap
+  every run.
+
+## Pricing
+
+Two meters, nothing else: simulation runs (build and certify; our-cloud runs
+count 3) and completed handovers (a handover that stops, fails, or is handed
+back costs nothing). Creation is never metered. Team $99/mo (300 runs, 100
+handovers). Growth $299/mo (1,500 runs, 500 handovers). 14-day trial, card
+required, trial usage free.
+
+## Key pages
+
+- https://docs.holostaff.ai/ : documentation home
+- https://docs.holostaff.ai/getting-started/quickstart.html : one command to the map
+- https://docs.holostaff.ai/journey-maps/index.html : what a journey map is
+- https://docs.holostaff.ai/autopilots/index.html : what a workflow autopilot is
+- https://docs.holostaff.ai/autopilots/create.html : creating and certifying one
+- https://docs.holostaff.ai/how-it-works/guarded-actions.html : the safety envelope
+- https://docs.holostaff.ai/how-it-works/rehearsal-evaluations.html : certification
+- https://docs.holostaff.ai/evaluations/index.html : synthetic users, runs, verdicts
+- https://docs.holostaff.ai/deploy/index.html : the PR deploy flow
+- https://docs.holostaff.ai/deploy/sdk.html : the SDK and the autopilot layer
+- https://docs.holostaff.ai/how-it-works/what-leaves-your-machine.html : scan privacy
+- https://docs.holostaff.ai/impact/index.html : verified handovers and lift
+- https://docs.holostaff.ai/billing/index.html : the two meters
+- https://docs.holostaff.ai/cli/index.html : CLI reference and CI mode
